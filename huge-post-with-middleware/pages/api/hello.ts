@@ -9,3 +9,11 @@ export default function handler(
     res.status(200).json(req.body);
   }
 }
+
+export const config = {
+  api: {
+    bodyParser: {
+      sizeLimit: "5mb",
+    }
+  }
+}
